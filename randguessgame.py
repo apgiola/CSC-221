@@ -35,8 +35,7 @@ while usr_num > 0 and usr_num < 51: # 0 < input < 51
             usr_num = rand_num % 2 + 3
             counter = 0 #reset counter
         if q_answer == 'N': #ends the game for the player.
-            print('Thank you for playing, have a great day!')
-            break #end loop
+            usr_num = 0
     
 else: # exception handling + quit
     if usr_num == 0: # user has quit, receive quit msg
