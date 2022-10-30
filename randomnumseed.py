@@ -21,12 +21,12 @@ for i in range(iter_input): #range of iterations by user definition
 
 # Get first user input
 usr_input = float(input()) 
-lst = [usr_input] # blank list
+lst = [usr_input] # include first user input
 while usr_input > 0: # if user enters positive number, this will
     usr_input = float(input()) 
     if usr_input < 0:
         break
-    if usr_input > 0:
+    if usr_input >= 0:
         lst.append(usr_input) # looped input to list if above 0
 if len(lst) != 0:
     average = sum(lst) / len(lst)
