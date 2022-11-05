@@ -22,7 +22,7 @@ for i in range(iter_input): #range of iterations by user definition
 # Get first user input
 usr_input = float(input()) 
 lst = [usr_input] # include first user input
-while usr_input > 0: # if user enters positive number, this will
+while usr_input >= 0: # if user enters positive number, this will
     usr_input = float(input()) 
     if usr_input < 0:
         break
