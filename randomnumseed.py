@@ -20,17 +20,17 @@ for i in range(iter_input): #range of iterations by user definition
 # then calculate and print the average of those entered numbers.
 
 # Get first user input
-usr_input = float(input()) 
+usr_input = float(input()) #first user input
 lst = [usr_input] # include first user input
 while usr_input >= 0: # if user enters positive number, this will
-    usr_input = float(input()) 
-    if usr_input < 0:
-        break
-    if usr_input >= 0:
+    usr_input = float(input()) #accept floats for grading
+    if usr_input < 0: # we dislike negative numbers here
+        break #kills loop if negative number is entered
+    if usr_input >= 0: #accept positive number
         lst.append(usr_input) # looped input to list if above 0
-if len(lst) != 0:
-    average = sum(lst) / len(lst)
-else: 
+if len(lst) != 0: # Average numbers as long as there is a single positive number
+    average = sum(lst) / len(lst) #average with length of list and sum of all items in the list. 
+else: # if they only entered negative numbers
     average = float(0)
 
 print('Average:', f'{average:.2f}') # print usr_input average)
