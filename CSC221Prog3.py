@@ -64,9 +64,9 @@ def count_values(input_list):
     # negative percentage = negative count / length of finished list
     neg_percent = neg_count* 100 / len(input_list)
     # print negative percentage
-    print(f'Odd Values: {neg_percent}%')
+    print(f'Odd Values: {neg_percent:.1f}%')
     # print positive percentage
-    print(f'Positive Values: {pos_percent}%')
+    print(f'Positive Values: {pos_percent:.1f}%')
 
 # body if then statement is executed
 if __name__ == '__main__':
@@ -104,7 +104,7 @@ if __name__ == '__main__':
                 super_val = False
         # user somehow messed up and earlier validation didn't catch it. Reruns program if an error is caught: IE - ValueError        
         except:
-            print('you have entered an invalid value for the range of number of values to be generated! Try again!')
+            print('you have entered an invalid value for the range or number of values to be generated! Try again!')
             continue
 # just in case ? 
 else: 
